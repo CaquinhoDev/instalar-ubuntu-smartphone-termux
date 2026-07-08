@@ -27,7 +27,7 @@ if [ "$first" != 1 ];then
 		*)
 			echo "Arquitetura de sistema imcompativel"; exit 1 ;;
 		esac
-		wget "https://github.com/AndronixApp/AndronixOrigin/blob/master/Rootfs/Ubuntu22/jammy-arm64.tar.gz" -O $tarball
+		wget "https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/refs/heads/master/Rootfs/Ubuntu22/jammy-arm64.tar.gz" -O $tarball
 
 	fi
 
