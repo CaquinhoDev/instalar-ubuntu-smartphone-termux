@@ -236,23 +236,23 @@ rm -rf ubuntu22-fs/usr/local/bin/*
 
 echo "127.0.0.1 localhost" > $folder/etc/hosts
 echo "Set disable_coredump false" > $folder/etc/sudo.conf
-wget -q https://raw.githubusercontent.com/elizeubarbosaabreu/instalar-ubuntu-smartphone-termux/master/.bash_profile -O ubuntu22-fs/root/.bash_profile > /dev/null
-wget -q https://raw.githubusercontent.com/elizeubarbosaabreu/instalar-ubuntu-smartphone-termux/master/vnc -P ubuntu22-fs/usr/local/bin > /dev/null
-wget -q https://raw.githubusercontent.com/elizeubarbosaabreu/instalar-ubuntu-smartphone-termux/master/vncpasswd -P ubuntu22-fs/usr/local/bin > /dev/null
-wget -q https://raw.githubusercontent.com/elizeubarbosaabreu/instalar-ubuntu-smartphone-termux/master/vncserver-stop -P ubuntu22-fs/usr/local/bin > /dev/null
-wget -q https://raw.githubusercontent.com/elizeubarbosaabreu/instalar-ubuntu-smartphone-termux/master/vncserver-start -P ubuntu22-fs/usr/local/bin > /dev/null
+wget -q https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/master/.bash_profile -O ubuntu22-fs/root/.bash_profile > /dev/null
+wget -q https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/master/vnc -P ubuntu22-fs/usr/local/bin > /dev/null
+wget -q https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/master/vncpasswd -P ubuntu22-fs/usr/local/bin > /dev/null
+wget -q https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/master/vncserver-stop -P ubuntu22-fs/usr/local/bin > /dev/null
+wget -q https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/master/vncserver-start -P ubuntu22-fs/usr/local/bin > /dev/null
 
-wget -q https://raw.githubusercontent.com/elizeubarbosaabreu/instalar-ubuntu-smartphone-termux/master/firstrun -P ubuntu22-fs/usr/share/andronix > /dev/null
+wget -q https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/master/firstrun -P ubuntu22-fs/usr/share/andronix > /dev/null
 
 mkdir -p ubuntu22-fs/usr/share/andronix
 case "$1" in
 	"nde")
 		;;
   "lxde")
-		wget -q https://raw.githubusercontent.com/elizeubarbosaabreu/instalar-ubuntu-smartphone-termux/master/de-lxde -O ubuntu22-fs/usr/share/andronix/de-install > /dev/null
+		wget -q https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/master/de-lxde -O ubuntu22-fs/usr/share/andronix/de-install > /dev/null
     ;;
 	*)
-		wget -q https://raw.githubusercontent.com/elizeubarbosaabreu/instalar-ubuntu-smartphone-termux/master/de-xfce -O ubuntu22-fs/usr/share/andronix/de-install > /dev/null
+		wget -q https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/master/de-xfce -O ubuntu22-fs/usr/share/andronix/de-install > /dev/null
 		;;
 esac
 
