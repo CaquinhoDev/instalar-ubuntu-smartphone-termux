@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 pkg install wget -y
 wget "https://andronixos.sfo2.cdn.digitaloceanspaces.com/OS-Files/setup-audio.sh" && chmod +x setup-audio.sh && ./setup-audio.sh
-
+cur=$(pwd)
 folder=ubuntu22-fs
 dlink="https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/APT"
 if [ -d "$folder" ]; then
@@ -31,7 +31,7 @@ if [ "$first" != 1 ];then
 
 	fi
 
-	cur=`pwd`
+	#cur=`pwd`
 	mkdir -p "$folder"
 	cd "$folder"
 	echo "Descompactando Rootfs, muita calma nessa hora."
