@@ -20,19 +20,19 @@ Escolha um tipo de Sistema abaixo aí basta copiar e colar o conteúdo no termmi
 ### Use o código abaixo para instalar o Ubuntu 20 com XFCE4
 
 ```bash
-pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/elizeubarbosaabreu/instalar-ubuntu-smartphone-termux/master/ubuntu.sh && chmod +x ubuntu.sh && bash ubuntu.sh
+pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/refs/heads/main/ubuntu.sh && chmod +x ubuntu.sh && bash ubuntu.sh
 ```
 
 ### Use Esse comando para instalar o Ubuntu Server (apenas terminal)
 
 ```bash
-pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/elizeubarbosaabreu/instalar-ubuntu-smartphone-termux/master/ubuntu.sh && chmod +x ubuntu.sh && bash ubuntu.sh nde
+pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/refs/heads/main/ubuntu.sh && chmod +x ubuntu.sh && bash ubuntu.sh nde
 ```
 
 ### Use o código abaixo para instalar o Ubuntu 20 com LXDE
 
 ```bash
-pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/elizeubarbosaabreu/instalar-ubuntu-smartphone-termux/master/ubuntu.sh && chmod +x ubuntu.sh && bash ubuntu.sh lxde
+pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/refs/heads/main/ubuntu.sh && chmod +x ubuntu.sh && bash ubuntu.sh lxde
 ```
 
 ## Utilização do sistema
@@ -42,7 +42,7 @@ pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/eli
 Após a instalação e configuração do sistema. Rode o comando abaixo no termux para iniciar o Ubuntu:
 
 ```bash
-./start-ubuntu20.sh
+./start-ubuntu22.sh
 ```
 
 ### Desligar o Ubuntu
@@ -135,7 +135,7 @@ sudo apt install firefox-esr
 
 Para instalar alguns softwares adicionais (inclusive o pi-apps que funciona como um store de softwares) rode o comando abaixo:
 ```
-wget https://raw.githubusercontent.com/elizeubarbosaabreu/instalar-ubuntu-smartphone-termux/main/installers.sh && chmod +x installers.sh && ./installers.sh
+wget https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/refs/heads/main/installers.sh && chmod +x installers.sh && ./installers.sh
 ```
 ## Adicionando temas
 
