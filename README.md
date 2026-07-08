@@ -1,4 +1,4 @@
-# Instalação do UBUNTU 20 no Android com TERMUX
+# Instalação do UBUNTU 22 no Android com TERMUX
 
 Esse repositório é um fork do repositório [tuanpham-dev](https://github.com/tuanpham-dev/termux-ubuntu). O único trabalho que tive foi traduzí-lo e indicar alguns temas que considero interessantes.
 
@@ -6,7 +6,7 @@ Todos os Scripts de instalação são originalmente obtidos de [AndronixApp](htt
 
 Este instalador pretende instalar as seguintes funcionalidades e softwares em seu Smartphone com Termux:
 
-- [x] Ubuntu 20
+- [x] Ubuntu 22
 - [x] XFCE4 Desktop
 - [x] TigerVNC Server
 - [x] Non-root Account Creation
@@ -17,7 +17,7 @@ Este instalador pretende instalar as seguintes funcionalidades e softwares em se
 
 Escolha um tipo de Sistema abaixo aí basta copiar e colar o conteúdo no termminal do Termux em seu Smartphone:
 
-### Use o código abaixo para instalar o Ubuntu 20 com XFCE4
+### Use o código abaixo para instalar o Ubuntu 22 com XFCE4
 
 ```bash
 pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/refs/heads/main/ubuntu.sh && chmod +x ubuntu.sh && bash ubuntu.sh
@@ -29,7 +29,7 @@ pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/Caq
 pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/refs/heads/main/ubuntu.sh && chmod +x ubuntu.sh && bash ubuntu.sh nde
 ```
 
-### Use o código abaixo para instalar o Ubuntu 20 com LXDE
+### Use o código abaixo para instalar o Ubuntu 22 com LXDE
 
 ```bash
 pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/CaquinhoDev/instalar-ubuntu-smartphone-termux/refs/heads/main/ubuntu.sh && chmod +x ubuntu.sh && bash ubuntu.sh lxde
