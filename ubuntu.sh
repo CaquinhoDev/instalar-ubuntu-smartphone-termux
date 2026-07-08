@@ -16,18 +16,18 @@ if [ "$first" != 1 ];then
 	if [ ! -f $tarball ]; then
 		echo "Baixando Rootfs, isso demora um pouco dependendo da velocidade de seu provedor de internet."
 		case `dpkg --print-architecture` in
-		aarch64)
-			archurl="arm64" ;;
-		arm)
-			archurl="armhf" ;;
-		amd64)
-			archurl="amd64" ;;
-		x86_64)
-			archurl="amd64" ;;
-		*)
-			echo "Arquitetura de sistema imcompativel"; exit 1 ;;
+    arm)
+        wget "https://cdimage.ubuntu.com/ubuntu-base/releases/jammy/release/ubuntu-base-22.04-base-armhf.tar.gz" -O $tarball
+        ;;
+    aarch64)
+        wget "https://cdimage.ubuntu.com/ubuntu-base/releases/jammy/release/ubuntu-base-22.04-base-arm64.tar.gz" -O $tarball
+        ;;
+    *)
+        echo "Arquitetura incompatível"
+        exit 1
+        ;;
 		esac
-		wget "https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/refs/heads/master/Rootfs/Ubuntu22/jammy-arm64.tar.gz" -O $tarball
+		#wget "https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/refs/heads/master/Rootfs/Ubuntu22/jammy-arm64.tar.gz" -O $tarball
 
 	fi
 
